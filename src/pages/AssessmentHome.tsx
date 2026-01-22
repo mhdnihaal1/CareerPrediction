@@ -82,7 +82,7 @@ export default function AssessmentHome({ onFinish }: AssessmentProps) {
   // ---------------- EFFECT ----------------
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/questions")
+    fetch("https://careerprediction-backend.onrender.com/api/questions")
       .then((res) => res.json())
       .then(setQuestions);
   }, []);
